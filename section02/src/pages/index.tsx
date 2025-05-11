@@ -12,6 +12,8 @@ export default function Home() {
   );
 }
 
+// 페이지 컴포넌트에 대해서, getLayout 메서드를 사용하면 => 인자로 페이지를 받아올 수 있음
+// 그러면 return 할때 Wrapping해서 리턴 가능
 Home.getLayout = (page: ReactNode) => {
   return <SearchableLayout>{page}</SearchableLayout>;
 };
