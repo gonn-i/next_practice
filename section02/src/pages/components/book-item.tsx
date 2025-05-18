@@ -1,8 +1,8 @@
-import { BookItemProp } from '@/types';
+import { BookData } from '@/types';
 import Link from 'next/link';
 import style from './book-item.module.css';
 
-export default function BookItem(props: BookItemProp) {
+export default function BookItem(props: BookData) {
   return (
     <Link href={`/book/${props.id}`} className={style.container}>
       <img src={props.coverImgUrl} />

@@ -1,4 +1,4 @@
-export interface BookItemProp {
+export interface BookData {
   id: number;
   title: string;
   subTitle: string;
